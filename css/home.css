@@ -17,6 +17,12 @@ header {
 
 }
 
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #26333D;
+}
+
 .layout-grid {
     width: 100%;
     max-width: 992px;
@@ -41,10 +47,17 @@ header nav {
 
 }
 
+nav a:hover {
+    color: #2FD6CB;
+    text-decoration: none;
+
+}
+
 header nav a {
     display: flex;
     color: white;
     text-decoration: none;
+
 }
 
 main {
@@ -54,8 +67,72 @@ main {
     height: 100%;
     /* padding-top: 20px; */
     padding-bottom: 20px;
-    /* background-color: #E9F0EF; */
+    background-color: #E9F0EF;
 }
+
+
+#banner {
+    width: 100%;
+    height: 570px;
+    background-color: #4969df;
+
+}
+
+.banner-flex {
+    display: flex;
+    /* border: 2px solid blue; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 300px;
+    /* border: 6px solid red; */
+
+    color: white;
+    font-size: 20px;
+    border: 2px solid green;
+}
+
+#banner img {
+    margin-top: 53px;
+    width: 500px;
+    height: 100%;
+    align-self: flex-end;
+
+}
+
+h4 {
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.banner-info button {
+    width: 180%;
+    height: 50px;
+    background-color: #26333D;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
 
 .icones {
     display: flex;
@@ -67,7 +144,7 @@ main {
     height: 300px;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 2px 2px 20px black;
+    box-shadow: 2px 2px 20px rgb(142, 142, 142);
     text-align: center;
     margin-top: 40px;
     padding: 10px;
@@ -76,7 +153,8 @@ main {
 
 .porque-usar {
     width: 100%;
-    height: 500px;
+    height: 570px;
+
     background-color: #E9F0EF;
 }
 
@@ -155,19 +233,81 @@ main {
     font-size: large;
 }
 
-.bibliotec-flex .titulo-livro {
+#acesso {
+   
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 40px;
+    height: 400px;
+    background-color: #3691d8;
 }
 
-.bibliotec-flex .titulo-livro hr {
-    width: 30%;
-    border: 2px solid #2FD6CB;
-    margin-bottom: 10px;
+.acesso-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* border: 2px solid pink; */
 }
+
+.acesso-flex img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+.acesso-gratis {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 450px;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+
+.acesso-gratis button {
+    background-color: #26333D;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    height: 50px;
+    width: 180px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+}
+
+.acesso-gratis h5 {
+    color: white;
+    font-size: 30px;
+}
+.acesso-gratis p{ 
+    color: white;
+    font-size: 20px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .livros {
     /* background-color: black; */
@@ -177,94 +317,126 @@ main {
 }
 
 .livros h2 {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 15px;
-    ;
 }
 
 .livros h3 {
-    margin-top: 20px;
+    margin-top: 14px;
     font-size: medium;
 }
 
 .top-4livros {
+    padding: 30px;
     width: 100%;
     height: 600px;
-    background-color: #ffff;
-
+    background-color: white;
 }
 
-
-footer {
+.bibliotec-flex .titulo-livro {
     width: 100%;
-    height: 300px;
-    background-color: #26333D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.footer-flex{
+.bibliotec-flex .titulo-livro hr {
+    width: 30%;
+    border: 2px solid #2FD6CB;
+    margin-bottom: 10px;
+}
+
+.conteudo {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 300px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    /* border: 2px solid orange; */
+    width: 100%;
+}
+
+.logo-footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
     /* border: 2px solid red; */
 }
-.conteudo{
-    width: 100%;
+
+.nav-footer {
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-    /* border: 2px solid  aquamarine; */
+    width: 500px;
 }
 
-.logo-footer{
+.left-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 230px;
+    width: 500px;
+    border: #2FD6CB;
     height: 80%;
-    /* border: 2px solid orange; */
 }
- .nav-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    /* border: 2px solid green; */
-  }
 
-  .left-info{
-    width: 250px;
-    height: 80%;
+.right-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px solid blue; */
-
-  }
-  .right-info{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     width: 200px;
     height: 80%;
-    /* border: 2px solid blue; */
-}
-.nav-footer h4{
-    color:#2FD6CB;
-    
 }
 
-.nav-footer a {
+.right-info a {
+    color: white;
     text-decoration: none;
-    color: aliceblue;
+    height: 100%;
+    width: 200px;
 }
 
-.redes{
+
+.left-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-footer h4 {
+    color: #2FD6CB;
+    font-size: 16px;
+}
+
+.redes-sociais {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end ;
-    /* border: 2px solid purple ; */
+    /* border: 2px solid pink */
 }
 
+footer hr {
+    width: 100%;
+    margin-top: 10px;
+}
 
+.barra {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 40px;
+}
 
+.barra a {
+    color: white;
+    text-decoration: none;
+}
 
+.padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
