@@ -1,10 +1,7 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{ 
-    background-color: #4969df;
 }
 
 header {
@@ -51,21 +48,88 @@ header nav a {
 
 }
 
-main{ 
-
-
-
-
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    background-image: url("../imagens/login-bk-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 
 }
 
 
-form{
-    
-    border: 2px solid red;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 60%;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+
+    /* border: 2px solid purple; */
 }
 
 
+.container button {
+    width: 100%;
+    height: 35px;
+    background-color: #26333D;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
 
+}
 
+button:hover{
+    background-color: powderblue;
+    color: black;
+}
 
+.container h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 40px;
+}
+
+.assunto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.assunto a {
+    width: 100%;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    flex-direction: row-reverse;
+}
+
+.assunto input {
+    display: flex;
+    height: 35px;
+    width: 500px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+form label {
+    width: 100%;
+}
