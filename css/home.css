@@ -67,7 +67,7 @@ main {
     height: 100%;
     /* padding-top: 20px; */
     padding-bottom: 20px;
-    background-color: #E9F0EF;
+    background-color: white;
 }
 
 
@@ -96,7 +96,7 @@ main {
 
     color: white;
     font-size: 20px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 #banner img {
@@ -287,28 +287,6 @@ h4 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .livros {
     /* background-color: black; */
     height: 300px;
@@ -439,4 +417,60 @@ footer hr {
 .padding {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    /* navbar */
+
+
+    .menu{
+        position: fixed;
+        top: 0;
+        left: -80%;
+        z-index: 10;
+
+        width: 80%;
+        height: 100%;
+        background-color: #26333D;
+    }
+
+    .mostra-menu{
+        left: 0;
+    }
+
+
+
+    .porque-usar{
+        height: auto;
+        padding: 20px;
+    }
+
+    .icones{
+        margin-top: 80px;
+    }
+
+    .bibliotec-flex{
+        flex-direction: column;
+
+        border: 2px solid blue ;
+    }
+
+    .livros{ 
+        flex-direction: column;
+        height: auto;
+
+        margin-bottom: 30px;
+    }
+
+
+    .top-4livros{
+        height: auto;
+        
+    }
+
+
+
+
+
+
 }
